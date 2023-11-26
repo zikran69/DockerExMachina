@@ -1,7 +1,11 @@
-export default function Header() {
+import Carousel from "../header/Carousel";
+
+const Header = () => {
   return (
-    <div>
-      <img className="w-full h-[700px]" src="./src/assets/balik1.png" alt="" />
+    <div className="w-full px-[20px] lg:pl-[120px] pt-[50px] lg:pt-[130px] lg:py-4 py-2 bg-white">
+      <Carousel />
     </div>
   );
-}
+};
+
+export default Header;

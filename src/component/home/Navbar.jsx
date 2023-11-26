@@ -6,7 +6,7 @@ export default function Navbar() {
   const [isopen, setIsopen] = useState(false);
 
   return (
-    <div className="backdrop-blur-sm bg-white/30 fixed flex flex-col lg:flex-row justify-between items-center py-2 px-4 mx-auto z-10 w-full">
+    <div className="backdrop-blur-sm bg-white/30 fixed flex flex-col lg:flex-row justify-between items-center py-2 px-4 mx-auto w-full z-10">
       <div className="flex flex-row gap-20 justify-between items-center ">
         <NavLink to="/" className="">
           <img
@@ -15,8 +15,11 @@ export default function Navbar() {
             alt=""
           />
         </NavLink>
-        <NavLink to="/" className="text-[20px] md:text-[23px] lg:text-[50px]">
-          <h1 className="font-primary text-prime1">Balik Coffe</h1>
+        <NavLink
+          to="/"
+          className="text-[20px] md:text-[23px] lg:text-[50px] lg:ml-[250px]"
+        >
+          <h1 className="font-primary text-stone-700">Balik Coffe</h1>
         </NavLink>
         <div>
           <button
@@ -35,25 +38,25 @@ export default function Navbar() {
       >
         <a
           href="#"
-          className="block px-4 lg:py-2 font-secondary font-bold text-[20px] lg:text-[25px] hover:bg-second1 hover:bg-opacity-80 hover:text-white my-2 rounded-full"
-        >
-          About
-        </a>
-        <a
-          href="#"
-          className="block px-4 lg:py-2 font-secondary font-bold text-[20px] lg:text-[25px] hover:bg-second1 hover:bg-opacity-80 hover:text-white my-2 rounded-full"
+          className="block px-4 lg:py-2 font-secondary font-bold text-[20px] lg:text-[25px] hover:bg-amber-800 hover:bg-opacity-80 hover:text-white my-2 rounded-full"
         >
           Menu
         </a>
         <a
           href="#"
-          className="block px-4 lg:py-2 font-secondary font-bold text-[20px] lg:text-[25px] hover:bg-second1 hover:bg-opacity-80 hover:text-white my-2 rounded-full"
+          className="block px-4 lg:py-2 font-secondary font-bold text-[20px] lg:text-[25px] hover:bg-amber-800 hover:bg-opacity-80 hover:text-white my-2 rounded-full"
+        >
+          About
+        </a>
+        <a
+          href="#"
+          className="block px-4 lg:py-2 font-secondary font-bold text-[20px] lg:text-[25px] hover:bg-amber-800 hover:bg-opacity-80 hover:text-white my-2 rounded-full"
         >
           Order
         </a>
         <a
           href="#"
-          className="block px-4 lg:py-2 font-secondary font-bold text-[20px] lg:text-[25px] hover:bg-second1 hover:bg-opacity-80 hover:text-white my-2 rounded-full"
+          className="block px-4 lg:py-2 font-secondary font-bold text-[20px] lg:text-[25px] hover:bg-amber-800 hover:bg-opacity-80 hover:text-white my-2 rounded-full"
         >
           Admin
         </a>
