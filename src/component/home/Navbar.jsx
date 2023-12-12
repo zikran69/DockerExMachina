@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import "remixicon/fonts/remixicon.css";
 
 export default function Navbar() {
@@ -34,32 +35,32 @@ export default function Navbar() {
       <div
         className={`${
           isopen ? "block" : "hidden"
-        } lg:flex flex-col lg:flex-row justify-between gap-4 p-4  `}
+        } lg:flex flex-col lg:flex-row justify-between gap-4 p-4 `}
       >
-        <a
-          href="#"
+        <Link
+          to="Body"
           className="block px-4 lg:py-2 font-secondary font-bold text-[20px] lg:text-[25px] hover:bg-amber-800 hover:bg-opacity-80 hover:text-white my-2 rounded-full"
         >
           Menu
-        </a>
-        <a
-          href="#"
+        </Link>
+        <Link
+          to="About"
           className="block px-4 lg:py-2 font-secondary font-bold text-[20px] lg:text-[25px] hover:bg-amber-800 hover:bg-opacity-80 hover:text-white my-2 rounded-full"
         >
           About
-        </a>
-        <a
-          href="#"
+        </Link>
+        <NavLink
+          to={"Order"}
           className="block px-4 lg:py-2 font-secondary font-bold text-[20px] lg:text-[25px] hover:bg-amber-800 hover:bg-opacity-80 hover:text-white my-2 rounded-full"
         >
           Order
-        </a>
-        <a
+        </NavLink>
+        <Link
           href="#"
           className="block px-4 lg:py-2 font-secondary font-bold text-[20px] lg:text-[25px] hover:bg-amber-800 hover:bg-opacity-80 hover:text-white my-2 rounded-full"
         >
           Admin
-        </a>
+        </Link>
       </div>
     </div>
   );

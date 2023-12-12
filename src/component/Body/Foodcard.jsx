@@ -1,32 +1,18 @@
 import { useState } from "react";
-
-const foodItem = [
-  {
-    img: "./src/assets/cake.jpg",
-    text: "Cake",
-  },
-  {
-    img: "./src/assets/fries.jpg",
-    text: "Fries",
-  },
-  {
-    img: "./src/assets/noodle.jpg",
-    text: "Noodle",
-  },
-];
+import food from "../../global-menu/food.js";
 
 export default function Foodcard() {
   const [activeSlide, setActiveSlide] = useState(0);
 
   const nextSlide = () => {
     setActiveSlide((prevSlide) =>
-      prevSlide === foodItem.length - 1 ? 0 : prevSlide + 1,
+      prevSlide === food.length - 1 ? 0 : prevSlide + 1,
     );
   };
 
   const prevSlide = () => {
     setActiveSlide((prevSlide) =>
-      prevSlide === 0 ? foodItem.length - 1 : prevSlide - 1,
+      prevSlide === 0 ? food.length - 1 : prevSlide - 1,
     );
   };
 
@@ -40,7 +26,7 @@ export default function Foodcard() {
           height: "100%",
         }}
       >
-        {foodItem.map((item, index) => (
+        {food.map((item, index) => (
           <div
             key={index}
             className="flex flex-col items-center justify-center px-4"
@@ -54,7 +40,7 @@ export default function Foodcard() {
               />
             </div>
             <div className="bg-amber-700 font-secondary font-bold text-[20px] p-2 mt-2 rounded-2xl shadow-amber-700 shadow-md">
-              {item.text}
+              {item.title}
             </div>
           </div>
         ))}

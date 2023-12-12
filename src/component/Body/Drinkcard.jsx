@@ -1,44 +1,18 @@
 import { useState } from "react";
-
-const drinkItem = [
-  {
-    img: "./src/assets/kopisusubalik.png",
-    text: "Kopi Susu Balik",
-  },
-  {
-    img: "./src/assets/eskopisusugulaaren.png",
-    text: "Es Kopi Susu Gula Aren",
-  },
-  {
-    img: "./src/assets/latteice.png",
-    text: "Latte Ice",
-  },
-  {
-    img: "./src/assets/matcha.png",
-    text: "Matcha",
-  },
-  {
-    img: "./src/assets/matchalatte.png",
-    text: "Matcha Latte",
-  },
-  {
-    img: "./src/assets/vanillaoreo.png",
-    text: "Vanilla Oreo",
-  },
-];
+import drink from "../../global-menu/drink";
 
 export default function Drinkcard() {
   const [activeSlide, setActiveSlide] = useState(0);
 
   const nextSlide = () => {
     setActiveSlide((prevSlide) =>
-      prevSlide === drinkItem.length - 1 ? 0 : prevSlide + 1,
+      prevSlide === drink.length - 1 ? 0 : prevSlide + 1,
     );
   };
 
   const prevSlide = () => {
     setActiveSlide((prevSlide) =>
-      prevSlide === 0 ? drinkItem.length - 1 : prevSlide - 1,
+      prevSlide === 0 ? drink.length - 1 : prevSlide - 1,
     );
   };
 
@@ -52,7 +26,7 @@ export default function Drinkcard() {
           height: "100%",
         }}
       >
-        {drinkItem.map((item, index) => (
+        {drink.map((item, index) => (
           <div
             key={index}
             className="flex flex-col items-center justify-center px-4"
@@ -66,7 +40,7 @@ export default function Drinkcard() {
               />
             </div>
             <div className="bg-amber-700 font-secondary font-bold text-[20px] p-2 mt-2 rounded-2xl shadow-amber-700 shadow-md">
-              {item.text}
+              {item.title}
             </div>
           </div>
         ))}
