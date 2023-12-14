@@ -3,17 +3,11 @@ export default function Orderlist() {
     <div className="fixed bottom-0 inset-x-2 pl-6 pb-4 sm:px-0 sm:flex sm:items-center z-20 ">
       <div className="drawer">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content">
+        <div className="drawer-content pl-[200px] lg:pl-4">
           {/* Page content here */}
-          <div className="indicator ">
-            <span className="indicator-item badge badge-secondary">99+</span>
-            <label
-              htmlFor="my-drawer"
-              className="btn drawer-button btn-primary"
-            >
-              Orderan Anda
-            </label>
-          </div>
+          <label htmlFor="my-drawer" className="btn drawer-button bg-amber-600">
+            Orderan Anda
+          </label>
         </div>
         <div className="drawer-side ">
           <label
