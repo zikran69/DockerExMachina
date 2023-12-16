@@ -9,19 +9,19 @@ export default function Navbar() {
   return (
     <div className="backdrop-blur-sm bg-white/30 fixed flex flex-col lg:flex-row justify-between items-center py-2 px-4 mx-auto w-full z-10">
       <div className="flex flex-row gap-20 justify-between items-center ">
-        <NavLink to="/" className="">
+        <NavLink to="/home" className="">
           <img
             className="h-10 lg:h-20"
             src="./src/assets/baliklogo.png"
             alt=""
           />
         </NavLink>
-        <NavLink
-          to="/"
+        <div
+          to="#"
           className="text-[20px] md:text-[23px] lg:text-[50px] lg:ml-[250px]"
         >
           <h1 className="font-primary text-stone-700">Balik Coffe</h1>
-        </NavLink>
+        </div>
         <div>
           <button
             onClick={() => setIsopen(!isopen)}
@@ -56,7 +56,7 @@ export default function Navbar() {
           Order
         </NavLink>
         <Link
-          href="#"
+          to="#"
           className="block px-4 lg:py-2 font-secondary font-bold text-[20px] lg:text-[25px] hover:bg-amber-800 hover:bg-opacity-80 hover:text-white my-2 rounded-full"
         >
           Admin

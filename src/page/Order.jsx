@@ -7,9 +7,9 @@ export default function Order() {
     <>
       <Navbar />
       <Menulist />
-      <div className="p-2">
+      {/* <div className="p-2">
         <Orderlist />
-      </div>
+      </div> */}
     </>
   );
 }
