@@ -6,8 +6,10 @@ export default function Order() {
   return (
     <>
       <Navbar />
-      <Menulist />
-      {/* <div className="p-2">
+      <div>
+        <Menulist />
+      </div>
+      {/* <div className="fixed bottom-0 right-0">
         <Orderlist />
       </div> */}
     </>

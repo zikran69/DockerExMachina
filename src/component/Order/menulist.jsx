@@ -1,17 +1,11 @@
 import Orderdrink from "./orderdrink";
 import Orderfood from "./orderfood";
-import Orderlist from "./orderlist";
 
-export default function menulist() {
+export default function Menulist() {
   return (
-    <div className="flex flex-col lg:flex-row w-full lg:pt-[120px] pt-[60px]">
-      <div className="lg:w-[300px] fixed left-0">
-        <Orderlist />
-      </div>
-      <div className="lg:w-[1600px] lg:ml-[270px]">
-        <Orderdrink />
-        <Orderfood />
-      </div>
+    <div className="flex flex-col w-full lg:pt-[120px] pt-[60px] lg:p-6">
+      <Orderdrink />
+      <Orderfood />
     </div>
   );
 }

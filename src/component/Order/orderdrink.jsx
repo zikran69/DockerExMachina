@@ -21,7 +21,7 @@ export default function Orderdrink() {
         </h1>
       </div>
       <div className="w-full p-2 flex items-center justify-center">
-        <div className="grid grid-cols-2 gap-2 lg:grid-cols-5 lg:gap-6">
+        <div className="grid grid-cols-2 gap-3 lg:grid-cols-5 lg:gap-6">
           {drink.map((item, index) => (
             <div
               key={index}

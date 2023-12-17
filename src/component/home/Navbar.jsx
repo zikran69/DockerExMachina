@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <div className="backdrop-blur-sm bg-white/30 fixed flex flex-col lg:flex-row justify-between items-center py-2 px-4 mx-auto w-full z-10">
       <div className="flex flex-row gap-20 justify-between items-center ">
-        <NavLink to="/home" className="">
+        <NavLink to="/" className="">
           <img
             className="h-10 lg:h-20"
             src="./src/assets/baliklogo.png"
