@@ -1,3 +1,6 @@
+import balik1 from "./src/assets/balik1.png";
+import balik2 from "./src/assets/balik2.png";
+import balik3 from "./src/assets/balik3.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -5,15 +8,15 @@ import { useRef } from "react";
 
 const items = [
   {
-    img: "./src/assets/balik1.png",
+    img: balik1,
     text: "Balik Bukan Berarti Pulang",
   },
   {
-    img: "./src/assets/balik2.png",
+    img: balik2,
     text: "Rumah Bukan Satu-Satunya Tempat Pulang",
   },
   {
-    img: "./src/assets/balik3.png",
+    img: balik3,
     text: "Kopi Mungkin Teman Pulang Terbaik",
   },
 ];
