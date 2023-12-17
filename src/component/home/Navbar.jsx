@@ -50,17 +50,11 @@ export default function Navbar() {
           About
         </Link>
         <NavLink
-          to={"Order"}
+          to={"/Order"}
           className="block px-4 lg:py-2 font-secondary font-bold text-[20px] lg:text-[25px] hover:bg-amber-800 hover:bg-opacity-80 hover:text-white my-2 rounded-full"
         >
           Order
         </NavLink>
-        <Link
-          to="#"
-          className="block px-4 lg:py-2 font-secondary font-bold text-[20px] lg:text-[25px] hover:bg-amber-800 hover:bg-opacity-80 hover:text-white my-2 rounded-full"
-        >
-          Admin
-        </Link>
       </div>
     </div>
   );

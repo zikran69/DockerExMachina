@@ -39,7 +39,7 @@ export default function Foodcard() {
                 alt=""
               />
             </div>
-            <div className="bg-amber-700 font-secondary font-bold text-[20px] p-2 mt-2 rounded-2xl shadow-amber-700 shadow-md">
+            <div className="bg-amber-700 font-secondary font-bold text-[20px] text-white p-2 mt-2 rounded-2xl shadow-amber-700 shadow-md">
               {item.title}
             </div>
           </div>

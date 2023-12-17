@@ -18,7 +18,7 @@ export default function Orderfood() {
   return (
     <div className="w-full pt-[30px]">
       <div className="w-full flex justify-center items-center">
-        <h1 className="font-primary text-[30px] lg:text-[50px] text-slate-800">
+        <h1 className="font-primary text-[30px] lg:text-[50px] text-amber-800">
           Food
         </h1>
       </div>
