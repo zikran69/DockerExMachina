@@ -1,5 +1,5 @@
 import { useState } from "react";
-import food from "../../global-menu/food.js";
+import food from "../../global-menu/food";
 
 export default function Foodcard() {
   const [activeSlide, setActiveSlide] = useState(0);

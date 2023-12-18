@@ -1,10 +1,13 @@
+import baliklogo from "/src/assets/baliklogo.png";
+import ig from "/src/assets/ig.png";
+import location from "/src/assets/location.jpg";
 export default function About() {
   return (
     <div id="About" className="w-full px-6 py-6 pt-4">
       <div
-        className="w-auto rounded-2xl shadow-lg shadow-black/50 "
+        className="w-auto rounded-2xl shadow-lg shadow-black/50  "
         style={{
-          backgroundImage: "url('./src/assets/baliklogo.png')",
+          backgroundImage: `url(${baliklogo})`,
           backgroundSize: "500px",
           backgroundPosition: "start",
           backgroundRepeat: "no-repeat",
@@ -22,11 +25,7 @@ export default function About() {
             }
             className="m-2 lg:w-[500px] h-[50px] w-auto flex flex-row justify-center items-center "
           >
-            <img
-              className="h-10 lg:h-20 rounded-xl"
-              src="./src/assets/ig.png"
-              alt=""
-            />
+            <img className="h-10 lg:h-20 rounded-xl" src={ig} alt="" />
             <p className="ml-2 text-white font-bold text-[25px] lg:text-[50px]">
               <a href="https://www.instagram.com/balik.coffee/">
                 @balik.coffee
@@ -36,7 +35,7 @@ export default function About() {
           <div className="w-auto p-2 flex flex-col gap-4">
             <img
               className="w-[50px] lg:w-[80px] rounded-full mx-[120px] lg:mx-[300px]"
-              src="./src/assets/location.jpg"
+              src={location}
               alt=""
             />
             <iframe
@@ -45,7 +44,7 @@ export default function About() {
               width={{ lg: "500px", md: "500px", sm: "300px" }}
               height="450"
               style={{ border: 0 }}
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>

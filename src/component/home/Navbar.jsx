@@ -1,3 +1,4 @@
+import baliklogo from "../../assets/baliklogo.png";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
@@ -10,11 +11,7 @@ export default function Navbar() {
     <div className="backdrop-blur-sm bg-white/30 fixed flex flex-col lg:flex-row justify-between items-center py-2 px-4 mx-auto w-full z-10">
       <div className="flex flex-row gap-20 justify-between items-center ">
         <NavLink to="/" className="">
-          <img
-            className="h-10 lg:h-20"
-            src="./src/assets/baliklogo.png"
-            alt=""
-          />
+          <img className="h-10 lg:h-20" src={baliklogo} alt="" />
         </NavLink>
         <div
           to="#"

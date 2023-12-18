@@ -1,6 +1,6 @@
-import balik1 from "./src/assets/balik1.png";
-import balik2 from "./src/assets/balik2.png";
-import balik3 from "./src/assets/balik3.png";
+import balik1 from "/src/assets/balik1.png";
+import balik2 from "/src/assets/balik2.png";
+import balik3 from "/src/assets/balik3.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
